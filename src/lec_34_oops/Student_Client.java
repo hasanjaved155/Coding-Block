@@ -1,4 +1,4 @@
-package lec_oops;
+package lec_34_oops;
 
 public class Student_Client {
     public static void main(String[] args) {
