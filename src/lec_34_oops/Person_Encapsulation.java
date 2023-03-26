@@ -6,9 +6,13 @@ public class Person_Encapsulation {
     public int getAge() {
         return age;
     }
-    public void setAge(int age) {
+    public void setAge(int age) throws Exception{
+        if (age < 0) {
+            throw new Exception("Ae Baklol Age Kabhi Negative Nahi Hoti");
+        }
         this.age = age;
     }
+
     public void setName(String name) {
         this.name = name;
     }
