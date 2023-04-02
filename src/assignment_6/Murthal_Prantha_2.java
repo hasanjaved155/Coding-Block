@@ -30,18 +30,18 @@ public class Murthal_Prantha_2 {
     }
 
     private static boolean isPossible(int[] ranks, int p, int l, int mid) {
-         int paratha = 1;
+         int countRank = 1;
          int tp = 0;
          int time = 0;
          int i = 0;
-         while (i < ranks.length){
-            if (time + paratha*ranks[i] <= mid){
-                time += paratha*ranks[i];
-                paratha++;
+         while (i < l){
+            if (time + countRank*ranks[i] <= mid){
+                time += countRank*ranks[i];
+                countRank++;
                 tp++;
             }else{
                 i++;
-                paratha = 1;
+                countRank = 1;
                 time = 0;
 
             }

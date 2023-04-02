@@ -31,11 +31,10 @@ public class Murthal_Prantha {
 
     private static boolean isPossible(int[] ranks, int p, int l, int mid) {
         int parantha = 0;
-        int time = 0;
         for (int i = 0; i < l; i++) {
-            time = ranks[i];
-            int j = 2;
-            while(time <= mid){
+            int time = 0;
+            int j = 1;
+            while(time + (ranks[i]*j) <= mid){
                 parantha++;
                 time = time + (ranks[i]*j);
                 j++;
