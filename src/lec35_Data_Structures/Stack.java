@@ -1,7 +1,7 @@
 package lec35_Data_Structures;
 
 public class Stack{
-    private int[] arr;
+    protected int[] arr;
     private int toss;
     public Stack(){
         arr = new int[5];
@@ -30,7 +30,7 @@ public class Stack{
     }
     public int pop() throws Exception{
         if (isEmpty()){
-            throw new Exception("Invalid Input Stack is full");
+            throw new Exception("Invalid Input Stack is Empty");
         }
         int val = arr[toss];
         toss--;
@@ -41,7 +41,7 @@ public class Stack{
     }
     public int peek() throws Exception{
         if (isEmpty()){
-            throw new Exception("Invalid Input Stack is full");
+            throw new Exception("Invalid Input Stack is Empty");
         }
         return arr[toss];
     }

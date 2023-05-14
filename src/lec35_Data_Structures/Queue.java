@@ -1,9 +1,9 @@
 package lec35_Data_Structures;
 
 public class Queue {
-    private int[] arr;
-    private int front;
-    private int size;
+    protected int[] arr;
+    protected int front;
+    public int size;
 
     public Queue(){
         arr = new int[5];
@@ -21,6 +21,7 @@ public class Queue {
     public boolean isFull(){
         return size == arr.length;
     }
+
     public void enque(int item) throws Exception{
         if (isFull()){
             throw new Exception("Queue is full");
