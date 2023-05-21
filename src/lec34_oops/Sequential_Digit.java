@@ -1,4 +1,4 @@
-package lec_34_oops;
+package lec34_oops;
 
 import java.util.ArrayList;
 import java.util.List;

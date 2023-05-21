@@ -9,6 +9,7 @@ public class Abstract_Client {
 //
 //            }
 //        };
-
+        ab.fun();
+        ab.sayHey();
     }
 }

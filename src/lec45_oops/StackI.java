@@ -4,6 +4,7 @@ public interface StackI {
     public void push();
     public int pop();
     public int size();
+    int val = 9;// by default public static and final variable under interface
 //
 //    //public static final int val = 90;
 //                       // or

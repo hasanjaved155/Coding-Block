@@ -2,7 +2,10 @@ package assignment_12_Linked_List;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+class Node{
+    int val;
+    Node next;
+}
 public class K_th_Element_From_Last {
     static Node head;
     static int size;

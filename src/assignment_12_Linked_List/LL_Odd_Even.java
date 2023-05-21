@@ -2,27 +2,29 @@ package assignment_12_Linked_List;
 
 import java.util.Scanner;
 
-class Node{
-    int val;
-    Node next;
-}
+
 public class LL_Odd_Even {
-    static Node head;
-    static int size;
-    static Node tail;
+    class Node{
+        int val;
+        Node next;
+    }
+    Node head;
+    int size;
+    Node tail;
 
     public static void main(String[] args) {
+        LL_Odd_Even x = new LL_Odd_Even();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
-        addLast_Odd(arr);
-        addLast_Even(arr);
-        Display();
+        x.addLast_Odd(arr);
+        x.addLast_Even(arr);
+        x.Display();
     }
-    public static void addLast_Odd(int[] item){
+    public void addLast_Odd(int[] item){
         int i = 0;
         while (i < item.length) {
             if (size == 0 && item[i] % 2 != 0) {
@@ -32,12 +34,12 @@ public class LL_Odd_Even {
                 nn.val = item[i];
                 tail.next = nn;
                 tail = nn;
-                //size++;
+                size++;
             }
             i++;
         }
     }
-    private static void addLast_Even(int[] item) {
+    private void addLast_Even(int[] item) {
         int i = 0;
         while (i < item.length) {
             if (size == 0 && item[i] % 2 == 0) {
@@ -47,24 +49,25 @@ public class LL_Odd_Even {
                 nn.val = item[i];
                 tail.next = nn;
                 tail = nn;
-                //size++;
+                size++;
             }
             i++;
         }
     }
-    public static void addFirst(int item){
+    public void addFirst(int item){
         Node nn = new Node();
         nn.val = item;
         if (size == 0){
             head = nn;
             tail = nn;
+            size++;
         }else {
             nn.next = head;
             head = nn;
+            size++;
         }
-        //size++;
     }
-    public static void Display(){
+    public void Display(){
         Node temp = head;
         while(temp != null) {
             System.out.print(temp.val + " ");

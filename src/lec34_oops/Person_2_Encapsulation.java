@@ -1,4 +1,4 @@
-package lec_34_oops;
+package lec34_oops;
 
 public class Person_2_Encapsulation {
     public static void main (String[] args) throws Exception {

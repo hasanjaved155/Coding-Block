@@ -9,7 +9,7 @@ public class Stack_Class implements StackI{
 
     @Override
     public int pop() {
-        int x = StackI.val;
+        //int x = StackI.val;
         //StackI.val += 3;// we can't change final variable
         return 0;
     }
