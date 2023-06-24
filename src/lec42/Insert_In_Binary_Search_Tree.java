@@ -1,6 +1,6 @@
 package lec42;
 
-public class Insert_In_Binary_Tree {
+public class Insert_In_Binary_Search_Tree {
     public class TreeNode {
       int val;
       TreeNode left;

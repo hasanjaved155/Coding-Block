@@ -9,7 +9,7 @@ public class Binary_Search_Tree_2 {
         int[] arr ={10,20,30,40,50,60};
         Node root = creatTree(arr,0,arr.length - 1);
         //Binary_Search_Tree_2 bst = new Binary_Search_Tree_2(arr);
-        creatTree(arr,0,arr.length - 1);
+        //creatTree(arr,0,arr.length - 1);
         display(root);
         System.out.println("\n" + minBST(root));
     }

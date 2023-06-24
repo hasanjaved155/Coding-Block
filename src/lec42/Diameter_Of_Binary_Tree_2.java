@@ -24,10 +24,10 @@ public class Diameter_Of_Binary_Tree_2 {
             }
             DiaPair ldp = diameter(root.left);
             DiaPair rdp  = diameter(root.right);
-            int sd = ldp.height + rdp.height + 2;
             DiaPair sdp = new DiaPair();
-            sdp.dia = Math.max(sd,Math.max(ldp.dia,rdp.dia));
             sdp.height = Math.max(ldp.height , rdp.height) + 1;
+            int sd = ldp.height + rdp.height + 2;
+            sdp.dia = Math.max(sd,Math.max(ldp.dia,rdp.dia));
             return sdp;
         }
     }
